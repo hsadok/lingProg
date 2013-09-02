@@ -7,7 +7,7 @@ NUMERO_DADOS_ALEATORIOS = 100
 
 function quickSort(array, ini, fim)
 	local i, j = ini, fim
-	local pivot = array[math.floor((fim+ini)/2)]--> nao usa o meio
+	local pivot = array[math.floor((fim+ini)/2)]
 	while i <= j do
 		while array[i] < pivot do
 			i = i + 1
@@ -22,7 +22,7 @@ function quickSort(array, ini, fim)
 		end
 	end
 	if j > ini then quickSort(array, ini, j) end
-	if i < fim then quickSort(array, i, fim) end--> diferente
+	if i < fim then quickSort(array, i, fim) end
 end
 
 local listaDeNumerosAleatorios = {}
