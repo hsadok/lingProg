@@ -12,8 +12,6 @@ sub obterNumeroLinhas{
 }
 
 sub obterNumeroPalavras{
-	my $semEOL = $_[0];
-	$semEOL =~ s/\n/ /g;
 	return scalar split(" ",$_[0]);
 }
 
