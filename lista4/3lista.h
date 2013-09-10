@@ -20,7 +20,7 @@ typedef struct nodeStruct{
 class Lista{
 	public:
 		Lista();
-		bool addElement(string nome, string telefone);
+		void addElement(string nome, string telefone);
 		void cleanList();
 		void printList();
 	private:
