@@ -30,9 +30,7 @@ int main(int argc, char const *argv[])
 				cin >> nome;
 				cout << "Escolha o Telefone\n";
 				cin >> telefone;
-				if (!agenda.addElement(nome, telefone)){
-					cout << "Erro ao adicionar o contato\n";
-				}
+				agenda.addElement(nome, telefone);
 				break;
 			case 2:
 				agenda.printList();
