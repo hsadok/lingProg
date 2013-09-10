@@ -16,7 +16,7 @@
  	listaInicio = NULL;
  }
 
- bool Lista::addElement(string nome, string telefone){
+ void Lista::addElement(string nome, string telefone){
  	nodeType *node;
 
  	node = new nodeType;
@@ -27,13 +27,13 @@
 
  	if(listaFinal == NULL){
  		listaInicio = listaFinal = node;
- 		return true;
+ 		return;
  	}
 
  	listaFinal->next = node;
  	listaFinal = node;
  	
- 	return true;
+ 	return;
  }
 
  void Lista::cleanList(){
@@ -49,6 +49,7 @@
  void Lista::printList(){
  	if(!listaInicio){
  		cout << "Lista vazia!\n";
+ 		return;
  	}
 
  	for(nodeType *i = listaInicio; i != NULL; i = i->next){
