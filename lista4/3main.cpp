@@ -43,6 +43,7 @@ int main(int argc, char const *argv[])
 		}
 		cout << endl << endl;
 	}
+	agenda.cleanList();
 	cout << "Saindo...\n";
 	
 	return 0;
