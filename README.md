@@ -1,4 +1,4 @@
 lingProg
 ========
 
-Linguagens de Programação - Engenharia Eletrônica - UFRJ (2013.2)
+Linguagens de Programação - Engenharia Eletrônica e de Computação - UFRJ (2013.2)
